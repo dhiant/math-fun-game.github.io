@@ -82,8 +82,8 @@ function hide(Id)
 function generateQA()
 {
 	// generate a random value from 1 to 20
-	var x = 1 + Math.round(Math.random() * 19);
-	var y = 1+ Math.round(Math.random() * 19 );
+	var x = 1 + Math.round(Math.random() * 99);
+	var y = 1+ Math.round(Math.random() * 99 );
 	correctAnswer = x * y;
 
 	// show question to the box
@@ -106,7 +106,7 @@ function generateQA()
 			do
 			{
 		    //generating a wrong answer
-		    wrongAnswer = (1 + Math.round(Math.random() * 19) ) * (1 + Math.round(Math.random() * 19));	
+		    wrongAnswer = (1 + Math.round(Math.random() * 99) ) * (1 + Math.round(Math.random() * 99));	
 		}while(wrongAnswer == correctAnswer);
 		//after getting a different answer
 		document.getElementById("box" + i).innerHTML = wrongAnswer;
